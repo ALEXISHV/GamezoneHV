@@ -1,0 +1,15 @@
+GameZoneHV (inventariosmvc) - ASP.NET Core MVC, .NET 10
+
+Requisitos: .NET SDK 10 instalado (verifica con: dotnet --version)
+
+Pasos (PowerShell):
+  cd inventariosmvc
+  dotnet watch run
+
+Se abre en http://localhost:5146
+Secciones: Inicio, Productos, Privacidad, Contactanos (/Home/Contact)
+
+Estructura MVC:
+  Models/       Videojuego.cs
+  Views/        Home, Productos, Shared/_Layout.cshtml
+  Controllers/  HomeController.cs, ProductosController.cs

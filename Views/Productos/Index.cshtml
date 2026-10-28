@@ -1,0 +1,29 @@
+@model List<inventariosmvc.Models.ProductoListado>
+@{
+    ViewData["Title"] = "Productos";
+}
+
+<h1>Catálogo de videojuegos</h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Descripción</th>
+            <th>Marca</th>
+            <th>Precio</th>
+            <th>Existencia</th>
+            <th>Registro</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var p in Model)
+    {
+        <tr>
+            <td>@p.Descripcion</td>
+            <td>@p.Marca</td>
+            <td>@p.Precio.ToString("C")</td>
+            <td>@p.Existencia</td>
+            <td>@p.FechaRegistro.ToString("dd/MM/yyyy")</td>
+        </tr>
+    }
+    </tbody>
+</table>
